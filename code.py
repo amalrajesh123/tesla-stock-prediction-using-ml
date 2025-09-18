@@ -10,7 +10,7 @@ import os
 for dirname, _, filenames in os.walk(''):
     for filename in filenames:
         print(os.path.join(dirname, filename))
- df=pd.read_csv("/content/TESLA.csv")
+ df=pd.read_csv("/content/ferrari.csv")
 df.head() 
 df.info()  
 df.describe() 
@@ -49,4 +49,5 @@ result=pd.concat(var)
 result.plot(figsize=(20,10),linewidth=1.5)
 plt.legend(loc=2,prop={'size':20})
 plt.xlabel('Date')
+
 plt.ylabel('Price')
